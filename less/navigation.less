@@ -1,1 +1,25 @@
 // Navigation Styles here
+#full-width{
+  
+  .flex(@g: 70%;);
+  height: 70px;
+  div{
+    width:50%;
+    h1{
+      .flex(@a: flex-start;);
+    }
+  }
+  #links{
+    .flex(@a: center; @g: 50%;);
+    
+    li{
+      .flex(@a: space-around; @g: 20%;);
+      list-style-type: none;
+      text-decoration: none;
+      a{
+        text-decoration: none;
+        color: @shark;
+      }
+    }
+  }
+}

@@ -131,6 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
+  font-weight: bold;
 }
 html,
 body {
@@ -159,6 +160,12 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+a {
+  line-height: 1.5;
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+  font-weight: bolder;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -167,6 +174,64 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+button {
+  color: white;
+  background-color: #17A2B8;
+  width: 85%;
+  height: 40px;
+  border-radius: 100px;
+  background-color: #117a8b;
+}
+#full-width {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 70%;
+  margin: 0 auto;
+  height: 70px;
+}
+#full-width div {
+  width: 50%;
+}
+#full-width div h1 {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+}
+#full-width #links {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 50%;
+  margin: 0 auto;
+}
+#full-width #links li {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 20%;
+  margin: 0 auto;
+  list-style-type: none;
+  text-decoration: none;
+}
+#full-width #links li a {
+  text-decoration: none;
+  color: #212529;
 }
 .footer {
   width: 100%;
@@ -224,4 +289,29 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+#topborder {
+  border-top: 2px dashed #C0C0C0;
+}
+#columnflex {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+#columnflex h2 {
+  text-align: left;
+  padding-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  flex-wrap: no-wrap;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
 }

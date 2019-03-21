@@ -12,3 +12,14 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+//Media Querries
+.responsive(@maxWidth: 500px; @rules; @width: 100%;) {
+  @media only screen and (max-width: @maxWidth) {
+      @rules();
+      width: @width;
+      margin: 0 auto;
+      .flex(@e: column;)
+
+  }
+}

@@ -36,6 +36,7 @@
       padding-right: 1%;
       padding-left: 0;
     }
+    
   }
 
   .content-destination {
@@ -59,3 +60,17 @@
     }
   }
 }// home
+
+
+#topborder{
+  border-top: 2px dashed @navigation-border;
+  }
+  #columnflex{
+    
+    .flex(@a: flex-start; @d: no-wrap; @e: column; @g: 70%;);
+    h2{
+      text-align: left;
+      padding-top: 10px;
+      .flex(@a: flex-start; @d: no-wrap; @e: row;);
+    }
+  }
