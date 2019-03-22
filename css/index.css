@@ -487,7 +487,7 @@ img {
 #topborder {
   border-top: 2px dashed #C0C0C0;
 }
-#columnflex {
+#topborder #columnflex {
   display: flex;
   justify-content: flex-start;
   align-content: center;
@@ -497,7 +497,7 @@ img {
   width: 40%;
   margin: 0 auto;
 }
-#columnflex h2 {
+#topborder #columnflex h2 {
   text-align: left;
   padding-top: 10px;
   display: flex;
@@ -510,7 +510,7 @@ img {
   margin: 0 auto;
 }
 @media (max-width: 500px) {
-  #columnflex {
+  #topborder #columnflex {
     display: flex;
     justify-content: flex-start;
     align-content: center;

@@ -8,6 +8,8 @@
 
 // Escaped Variables
 @mobile: ~"(max-width: 500px)";
+@tablet: ~"1500px";
+@desktop: ~"2500px";
 
 // Colors
 @white: #FFFFFF;
@@ -16,8 +18,11 @@
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
 
+
 //Media Querries
-.responsive(@rules: {} ; @width: 100%;) {
+
+.responsive(@rules: {}; @width: 100%;) {
+ 
   @media only screen and (max-width: @mobile) {
       @rules();
       width: @width;
@@ -26,3 +31,4 @@
 
   }
 }
+
