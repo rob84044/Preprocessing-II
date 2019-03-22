@@ -17,7 +17,7 @@
 @sandy-beach: #FFEBCD;
 
 //Media Querries
-.responsive(@rules; @width: 100%;) {
+.responsive(@rules: {} ; @width: 100%;) {
   @media only screen and (max-width: @mobile) {
       @rules();
       width: @width;
