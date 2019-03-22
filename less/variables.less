@@ -6,6 +6,9 @@
 @navigation-border: @silver;
 @footer-bg: @sandy-beach;
 
+// Escaped Variables
+@mobile: ~"(max-width: 500px)";
+
 // Colors
 @white: #FFFFFF;
 @silver: #C0C0C0;
@@ -14,8 +17,8 @@
 @sandy-beach: #FFEBCD;
 
 //Media Querries
-.responsive(@maxWidth: 500px; @rules; @width: 100%;) {
-  @media only screen and (max-width: @maxWidth) {
+.responsive(@rules; @width: 100%;) {
+  @media only screen and (max-width: @mobile) {
       @rules();
       width: @width;
       margin: 0 auto;

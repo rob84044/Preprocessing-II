@@ -1,13 +1,23 @@
 // Navigation Styles here
+
 #full-width{
   
   .flex(@g: 70%;);
   height: 70px;
+  
   div{
     width:50%;
     h1{
       .flex(@a: flex-start;);
+      @media @mobile {
+        .flex(@e: column; @a: space-around; @d: nowrap; @g: 100%;);
+        padding-top: 45px;
+        margin-bottom: 30px;
+      }
     }
+     @media @mobile {
+    .flex(@e: column; @a: space-around; @d: nowrap;@g: 70%;);
+  }
   }
   #links{
     .flex(@a: center; @g: 50%;);
@@ -21,5 +31,12 @@
         color: @shark;
       }
     }
+    @media @mobile {
+      .flex(@e: row; @a: space-around; @d: nowrap;);
+      padding-top: 10px;
+    }
+  }
+  @media @mobile {
+    .flex(@e: column; @a: space-around; @d: nowrap;);
   }
 }

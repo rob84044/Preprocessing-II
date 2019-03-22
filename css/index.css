@@ -175,14 +175,6 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-button {
-  color: white;
-  background-color: #17A2B8;
-  width: 85%;
-  height: 40px;
-  border-radius: 100px;
-  background-color: #117a8b;
-}
 #full-width {
   display: flex;
   justify-content: center;
@@ -206,6 +198,32 @@ button {
   flex-direction: row;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  #full-width div h1 {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 45px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 500px) {
+  #full-width div {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+  }
 }
 #full-width #links {
   display: flex;
@@ -233,6 +251,31 @@ button {
   text-decoration: none;
   color: #212529;
 }
+@media (max-width: 500px) {
+  #full-width #links {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 500px) {
+  #full-width {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -253,6 +296,32 @@ button {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+  text-align: left;
+}
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    border-top: 2px dashed #C0C0C0;
+    padding-top: 25px;
+  }
+  .home .content-section .text-content h2 {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .home .content-section .img-content {
   width: 48%;
@@ -260,6 +329,33 @@ button {
 }
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 0px;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
@@ -269,9 +365,35 @@ button {
   padding-left: 1%;
   padding-right: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    border-top: 2px dashed #C0C0C0;
+    padding-top: 25px;
+  }
+  .home .inverse-content .text-content h2 {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+  order: 1;
 }
 .home .content-destination {
   width: 75%;
@@ -279,6 +401,31 @@ button {
 }
 .home .content-destination img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-destination {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    border-top: 2px dashed #C0C0C0;
+    padding-top: 25px;
+  }
+  .home .content-destination h2 {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .home .content-pick {
   padding-top: 30px;
@@ -290,6 +437,53 @@ button {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 2px dashed #C0C0C0;
+    padding-top: 25px;
+    border: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 70%;
+    margin: 0 auto;
+    border-top: 2px dashed #C0C0C0;
+    padding-top: 25px;
+  }
+  .home .content-pick h4 {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+.home .content-pick button {
+  color: white;
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #17A2B8;
+}
 #topborder {
   border-top: 2px dashed #C0C0C0;
 }
@@ -298,9 +492,9 @@ button {
   justify-content: flex-start;
   align-content: center;
   align-items: center;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 #columnflex h2 {
@@ -310,8 +504,20 @@ button {
   justify-content: flex-start;
   align-content: center;
   align-items: center;
-  flex-wrap: no-wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   width: 100%;
   margin: 0 auto;
+}
+@media (max-width: 500px) {
+  #columnflex {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
 }
