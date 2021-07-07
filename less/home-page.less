@@ -5,12 +5,23 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+      text-align: left;
+      @media @mobile {
+        .flex(@a: flex-start; @b: flex-start; @d: nowrap; @e: column; @g: 90%;);
+        border-top: 2px dashed @navigation-border;
+        padding-top: 25px;
+        h2{
+          text-align: left;
+          .flex(@a: flex-start; @d: nowrap; @e: row;);
+        }
+      }
     }
 
     .img-content {
@@ -19,7 +30,19 @@
 
       img {
         border-radius: 10px;
+        
       }
+      @media @mobile {
+          .flex(@a: center;);
+          width: 100%;
+          height: 100%;
+          margin: 0 auto;
+        }
+    }
+    @media @mobile {
+      .flex(@a: center; @d: nowrap; @e: column; @g: 100%;);
+      text-align: left;
+      margin-left: 0px;
     }
   }
 
@@ -30,12 +53,23 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      @media @mobile {
+        .flex(@a: flex-start; @b: flex-start; @d: nowrap; @e: column; @g: 90%;);
+        border-top: 2px dashed @navigation-border;
+        padding-top: 25px;
+        h2{
+          text-align: left;
+          .flex(@a: flex-start; @d: nowrap; @e: row;);
+        }
+      }
     }
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      order: 1;
     }
+    
   }
 
   .content-destination {
@@ -44,6 +78,15 @@
 
     img {
       border-radius: 10px;
+    }
+    @media @mobile {
+      .flex(@a: flex-start; @b: flex-start; @d: nowrap; @e: column; @g: 90%;);
+      border-top: 2px dashed @navigation-border;
+      padding-top: 25px;
+      h2{
+        text-align: left;
+        .flex(@a: flex-start; @d: nowrap; @e: row;);
+      }
     }
   }
 
@@ -56,6 +99,42 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        .flex(@a: flex-start; @b: flex-start; @d: nowrap; @e: column; @g: 100%;);
+        border-top: 2px dashed @navigation-border;
+        padding-top: 25px;
+        border: none;        
+      }
+    }
+    @media @mobile {
+      .flex(@a: flex-start; @b: flex-start; @d: nowrap; @e: column; @g: 70%;);
+      border-top: 2px dashed @navigation-border;
+      padding-top: 25px;
+      h4{
+        text-align: left;
+        .flex(@a: flex-start; @d: nowrap; @e: row;);
+      }
+    }
+    button{
+      .button(@width: 100%; @border-radius: 15px;);
     }
   }
+  
 }// home
+
+
+#topborder{
+  border-top: 2px dashed @navigation-border;
+  
+  #columnflex{
+    .flex(@a: flex-start; @d: nowrap; @e: column; @g: 40%;);
+    h2{
+      text-align: left;
+      padding-top: 10px;
+      .flex(@a: flex-start; @d: nowrap; @e: row;);
+    }
+    @media @mobile {
+      .flex(@a: flex-start; @d: nowrap; @e: column; @g: 90%;);
+    }
+  }
+}
